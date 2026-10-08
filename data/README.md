@@ -9,11 +9,10 @@ This repository uses the **Telco Customer Churn** sample dataset distributed on 
 - Kaggle license label: **Data files © Original Authors**
 - IBM context: the records describe a fictional telecommunications company; `Churn` identifies customers who left during the last month.
 
-The source CSV is included so the analysis runs without credentials. Do not infer real-world customer behavior or protected-class effects from this fictional sample.
+The source CSV is downloaded by `python scripts/download_data.py` and is not committed. The public Kaggle download does not require credentials. Do not infer real-world customer behavior or protected-class effects from this fictional sample.
 
 Refresh the file with:
 
 ```bash
 python scripts/download_data.py
 ```
-

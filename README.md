@@ -88,7 +88,7 @@ See [MODEL_CARD.md](MODEL_CARD.md) for intended use, limitations, and monitoring
 .
 ├── data/
 │   ├── README.md
-│   └── raw/
+│   └── raw/                 # downloaded locally, not committed
 ├── notebooks/customer_churn_analysis.ipynb
 ├── reports/
 │   ├── figures/
@@ -108,6 +108,7 @@ See [MODEL_CARD.md](MODEL_CARD.md) for intended use, limitations, and monitoring
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e ".[dev]"
+python scripts/download_data.py
 python scripts/run_analysis.py
 python scripts/build_notebook.py
 jupyter nbconvert --execute --to notebook --inplace notebooks/customer_churn_analysis.ipynb
@@ -126,4 +127,3 @@ pytest -q
 ## Method note
 
 The project brief was informed by [Customer Churn Prediction Using Machine Learning](https://medium.com/@allanouko17/customer-churn-prediction-using-machine-learning-ddf4cd7c9fd4). The implementation improves evaluation discipline by selecting models with out-of-fold predictions, keeping a final test set untouched, and reporting retention-capacity metrics in addition to classifier scores. All code, analysis, and writing in this repository are original.
-
