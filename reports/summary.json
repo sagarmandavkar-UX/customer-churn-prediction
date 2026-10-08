@@ -1,0 +1,29 @@
+{
+  "rows": 7043,
+  "features": 19,
+  "overall_churn_rate": 0.2653698707936959,
+  "development_rows": 5634,
+  "test_rows": 1409,
+  "selected_model": "Gradient Boosting",
+  "selection_metric": "out-of-fold average precision",
+  "decision_threshold": 0.33420480017134985,
+  "test_pr_auc": 0.6634275293224399,
+  "test_roc_auc": 0.8449934123847167,
+  "test_precision": 0.5587628865979382,
+  "test_recall": 0.7245989304812834,
+  "test_f1": 0.6309662398137369,
+  "confusion_matrix": {
+    "tn": 821,
+    "fp": 214,
+    "fn": 103,
+    "tp": 271
+  },
+  "top_20_percent_targeting": {
+    "customers_targeted": 282,
+    "churners_captured": 186,
+    "precision": 0.6595744680851063,
+    "recall": 0.49732620320855614,
+    "lift": 2.484867447946296
+  },
+  "caveat": "This IBM sample describes a fictional telco and is not a production validation population."
+}
